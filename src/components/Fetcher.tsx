@@ -4,7 +4,10 @@ import { useEffect, useState } from "react";
 
 // to select our data more individually
 interface Posts {
+  userId: number;
   id: number;
+  title: string;
+  body: string;
 }
 
 function Fetcher() {
@@ -13,14 +16,21 @@ function Fetcher() {
   useEffect(() => {
     axios
       .get<Posts[]>("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => setPosts(response.data));
+      .then((response) => setPosts(response.data))
+      .catch((err) => console.log(err));
   }, []);
   return (
     <>
       <h1>Fetching Data</h1>
       <ul>
         {posts.map((element) => (
-          <li key={element.id}>{element.id}</li>
+          <li
+            key={element.id}
+            className="bg-indigo-300 border-2 border-black p-3 my-4 rounded-md"
+          >
+            <h2>{element.title}</h2>
+            <p>{element.body}</p>
+          </li>
         ))}
       </ul>
     </>
