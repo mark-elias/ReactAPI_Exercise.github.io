@@ -17,7 +17,7 @@ const router = createBrowserRouter(
     },
   ],
 
-  { basename: "/ReactAPI_Exercise.github.io" }
+  { basename: "https://github.com/mark-elias/ReactAPI_Exercise.github.io" }
 );
 
 export default router;
