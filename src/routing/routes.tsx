@@ -5,9 +5,19 @@ import HomePage from "./HomePage";
 import PostDetails from "./PostDetails";
 
 // create the router
-const router = createBrowserRouter([
-  { path: "/", element: <HomePage></HomePage> },
-  { path: "/postdetails", element: <PostDetails></PostDetails> },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <HomePage></HomePage>,
+    },
+    {
+      path: "/postdetails",
+      element: <PostDetails></PostDetails>,
+    },
+  ],
+
+  { basename: "/ReactAPI_Exercise.github.io" }
+);
 
 export default router;
