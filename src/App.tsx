@@ -1,3 +1,4 @@
+// for Tailwind
 import "./styles.css"
 
 function App() {
