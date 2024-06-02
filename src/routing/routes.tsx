@@ -8,16 +8,17 @@ import PostDetails from "./PostDetails";
 const router = createBrowserRouter(
   [
     {
-      path: "/",
+      path: "/ReactAPI_Exercise.github.io",
       element: <HomePage></HomePage>,
     },
+    { path: "/ReactAPI_Exercise.github.io/", element: <HomePage></HomePage> },
     {
-      path: "/postdetails",
+      path: "/ReactAPI_Exercise.github.io/postdetails",
       element: <PostDetails></PostDetails>,
     },
-  ],
+  ]
 
-  { basename: "https://github.com/mark-elias/ReactAPI_Exercise.github.io/blob/main/src/routing/HomePage.tsx" }
+  // { basename: "https://github.com/mark-elias/ReactAPI_Exercise.github.io/blob/main/src/routing/HomePage.tsx" }
 );
 
 export default router;

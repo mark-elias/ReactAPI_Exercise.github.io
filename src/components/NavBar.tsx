@@ -7,15 +7,15 @@ function NavBar() {
   return (
     <nav className="flex justify-around bg-indigo-300 min-h-20 items-center text-xl ">
       <div>
-        <Link to={"/"}>Cool Logo</Link>
+        <Link to={"/ReactAPI_Exercise.github.io/"}>Cool Logo</Link>
       </div>
       <div>
         <ul className="flex gap-10">
           <li>
-            <Link to={"/"}>HomePage</Link>
+            <Link to={"/ReactAPI_Exercise.github.io/"}>HomePage</Link>
           </li>
           <li>
-            <Link to={"/postdetails"}>PostDetails</Link>
+            <Link to={"/ReactAPI_Exercise.github.io/postdetails"}>PostDetails</Link>
           </li>
         </ul>
       </div>
